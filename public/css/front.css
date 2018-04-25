@@ -1,0 +1,286 @@
+/* ----------------------------------------------------- */
+/* Header-top */
+
+.header-top {
+    padding: 2rem 0;
+
+    border-bottom: 2px solid var(--lightGray);
+}
+
+.header-top-contact {
+    font-size: 0.875rem;
+    color: var(--lightBlack);
+}
+
+.header-top-contact p {
+    margin: 0;
+}
+
+.header-top-logo h1 {
+    font-family: var(--handFont);
+    font-size: 3rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.header-top-social a {
+    margin-left: .3rem;
+
+    font-size: 1rem;
+    text-align: center;
+    color: var(--lightBlack);
+
+}
+
+.header-top-social i {
+    background-color: var(--lightGray);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+
+    line-height: 2rem;
+
+    transition: .3s;
+}
+
+.header-top-social a:hover {
+    color: var(--white);
+}
+.header-top-social a:hover i {
+    background-color: var(--gold);
+}
+
+
+/* ----------------------------------------------------- */
+/* MENU */
+.nav {
+    padding: 2rem 0;
+}
+
+.menu li {
+    margin-right: 2rem;
+    text-transform: uppercase;
+}
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    color: var(--lightBlack);
+    font-weight: 700;
+
+    background: linear-gradient(180deg,var(--gold),var(--gold)) no-repeat 0 1.1rem;
+    background-size: 100% 100%;
+
+    transition: background-position-y .15s ease-out;
+}
+
+.menu li a:hover,
+.menu li a.active {
+    background-position-y: 0;
+
+    text-decoration: none;
+}
+
+
+/* ----------------------------------------------------- */
+/* BANNER */
+
+.banner {
+    padding: 5rem 0;
+}
+
+.banner-about {
+    font-size: 1.75rem;
+    color: var(--textBlack);
+
+    animation-name: fadeInLeft;
+}
+
+.banner-about p:first-child {
+    font-size: 2rem;
+    color: var(--lightBlack);
+}
+
+.banner-about a {
+    font-size: 1rem;
+    color: var(--lightBlack);
+    font-weight: 700;
+    text-transform: uppercase;
+
+    background: linear-gradient(180deg,var(--gold),var(--gold)) no-repeat 0 1rem;
+    background-size: 100% 100%;
+
+    transition: background-position-y .15s ease-out;
+}
+
+.banner-about a:hover {
+    background-position-y: 0;
+
+    text-decoration: none;
+}
+
+
+/* ----------------------------------------------------- */
+/* HOME BLOG */
+.home-blog {
+    padding: 5rem 0;
+    background: var(--lightGray);
+}
+
+.home-blog h2 {
+    margin-bottom: 5rem;
+
+    font-size: 2rem;
+    text-align: center;
+    color: var(--lightBlack);
+    font-weight: 500;
+}
+
+.home-blog-post:first-child {
+    margin-bottom: 5rem;
+}
+
+.home-post-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.home-post-title a,
+.admin-espace-content a {
+    color: var(--lightBlack);
+    font-weight: 700;
+    text-transform: uppercase;
+
+    background: linear-gradient(180deg,var(--gold),var(--gold)) no-repeat 0 1rem;
+    background-size: 100% 100%;
+
+    transition: background-position-y .15s ease-out;
+}
+
+.home-post-title a:hover,
+.admin-espace-content a:hover,
+.admin-espace-content a.active {
+    background-position-y: 0;
+
+    text-decoration: none;
+}
+
+.home-post-meta {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    font-size: 0.875rem;
+}
+
+.home-post-meta date {
+    color: var(--gold);
+}
+
+.home-post-exerpt {
+    font-size: 1rem;
+    color: var(--textBlack);
+    text-align: justify;
+}
+
+.home-post-blurb a {
+    font-size: 3rem;
+    color: var(--gold);
+
+    transition: .3s;
+}
+
+.home-post-blurb a:hover {
+    color: var(--black);
+}
+
+.home-post-img {
+    overflow: hidden;
+    max-height: 350px;
+}
+
+/* ----------------------------------------------------- */
+/* SINGLE PAGE BLOG POSTS */
+.home-post-content-single {
+    margin-top: 5rem;
+}
+
+
+.single-post-img {
+    width: 100%;
+    height: auto;
+
+    text-align: center;
+}
+
+
+/* ----------------------------------------------------- */
+/* SINGLE PAGE BLOG COMMENTS */
+.blog-comment {
+    margin: 2rem 0;
+}
+
+.blog-comment .comment-author {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gold);
+}
+
+.blog-comment .comment-date {
+    font-size: 0.875rem;
+    font-style: italic;
+}
+
+.add-comments {
+    margin-top: 5rem;
+}
+
+.add-comments h4 {
+    margin-bottom: 2rem;
+}
+
+
+/* ----------------------------------------------------- */
+/* BLOG CONNECTION */
+.blog-admin-connection h2 {
+    margin-bottom: 2rem;
+}
+
+.blog-admin-connection p {
+    margin-bottom: 5rem;
+
+    text-align: center;
+}
+
+
+/* ----------------------------------------------------- */
+/* BLOG ADMINISTRATION */
+.admin-espace-blurb {
+    margin-bottom: 5rem;
+}
+
+.admin-espace-content {
+    margin-bottom: 5rem;
+}
+
+.admin-espace-content a {
+    margin-right: 2rem;
+}
+
+
+/* ----------------------------------------------------- */
+/* FLASH MESSAGE */
+
+.alert p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* ----------------------------------------------------- */
+/* ABOUT SECTION */
+.about-text p {
+    text-align: justify;
+}
+

@@ -1,0 +1,135 @@
+/* ----------------------------------------------------- */
+/* Variables */
+:root {
+    /* Fonts */
+    --primaryFont: 'Open Sans', sans-serif;
+    --handFont: 'Mr Dafoe', cursive;
+    
+    /* Colors */
+    --black: #000;
+    --white: #fff;
+
+    --lightBlack: #323232;
+    --textBlack: #545657;
+    --gray: #727272;
+    --lightGray: #f3f3f3;
+    --gold: #e2c75a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primaryFont);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+h1, h2 {
+    cursor: default;
+}
+
+
+
+/* ----------------------------------------------------- */
+/* Forms */
+.connection label,
+.add-comments label {
+    font-weight: 700;
+}
+
+.connection input:focus,
+.add-comments input:focus,
+.form-control:focus {
+    border-color: var(--gold);
+    box-shadow: none;
+}
+
+.btn {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white);
+
+    background-color: var(--gold);
+    border: 2px solid var(--gold);
+
+    transition: all .3s;
+}
+
+.btn:hover {
+    background-color: var(--white);
+    border: 2px solid var(--gold);
+
+    color: var(--gold);
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.btn-danger:hover {
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-xs {
+    font-size: 0.85rem;
+    padding: .275rem .65rem;
+}
+
+textarea {
+    resize: none;
+}
+
+
+/* ----------------------------------------------------- */
+/* Footer */
+.footer {
+    padding: 5rem 0;
+}
+
+.footer-social {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.footer-social a {
+    margin-right: 3rem;
+
+    color: var(--lightBlack);
+    transition: .3s;
+}
+.footer-social a:last-child {
+    margin-right: 0;
+}
+.footer-social a:hover {
+    color: var(--gold);
+}
+
+
+.footer-copyright {
+    margin-top: 2rem;
+
+    font-size: 0.875rem;
+    text-align: center;
+    color: var(--gray);
+}
+
+.footer-copyright a {
+    color: var(--gray);
+    transition: .3s;
+}
+.footer-copyright a:hover {
+    color: var(--gold);
+}

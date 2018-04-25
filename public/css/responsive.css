@@ -1,0 +1,35 @@
+/* iPad Pro */
+@media (max-width: 1200px) {
+    #header .responsiveHidden {
+        display: none!important;
+    }
+
+    #header .header-top-resp {
+        justify-content: center!important;
+    }
+}
+
+@media(max-width: 992px) {
+    .banner-about {
+        font-size: 1.25rem;
+    }
+
+    .admin-espace-content a {
+        display: block;
+        margin: 0 auto 2rem auto;
+        
+    }
+}
+
+@media(max-width: 768px) {
+    .home-post-content {
+        margin-bottom: 2rem;
+    }
+
+    .about-img {
+        margin-top: 2rem;
+
+        text-align: center;
+    }
+}
+
