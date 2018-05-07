@@ -17,7 +17,7 @@ class SecTech extends Controller {
     public function login() {
 
         // Vérifie si le formulaire a été soumis
-        if (isset($_POST['login']) && $_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['token'])) {
+        if (isset($_POST['login']) && $_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['token'])) {
             
             // Permet de ralentir l'attaque par brute force
             sleep(1);
@@ -131,7 +131,7 @@ class SecTech extends Controller {
         if (isset($_SESSION['adminId'])) {
             
 
-            if (isset($_POST['editProfil']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
+            if (isset($_POST['editProfil']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
                 extract($_POST);
 
                 $data = [
@@ -211,7 +211,7 @@ class SecTech extends Controller {
     public function add() {
         if (isset($_SESSION['adminId'])) {
 
-            if (isset($_POST['add']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
+            if (isset($_POST['add']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
                 extract($_POST);
 
                 $fileName = $_FILES['postImage']['name'];
@@ -289,7 +289,7 @@ class SecTech extends Controller {
         if (isset($_SESSION['adminId'])) {
             $post = $this->postManager->getPost($id);
 
-            if (isset($_POST['edit']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
+            if (isset($_POST['edit']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
                 extract($_POST);
 
                 $fileName = $_FILES['postImage']['name'];
