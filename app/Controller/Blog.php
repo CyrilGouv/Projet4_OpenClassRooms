@@ -90,7 +90,7 @@ class Blog extends Controller {
 
             if ($update) {
                 $_SESSION['flash']['infos'] = 'success';
-                $_SESSION['flash']['message'] = 'Merci d\'avoir signaler un commentaire indésirable.';
+                $_SESSION['flash']['message'] = 'Merci d\'avoir signalé un commentaire indésirable.';
                 
                 header('Location: ' . URL_ROOT . '/blog/post/' . $postId . '#comments');
             }
