@@ -27,7 +27,7 @@ class Blog extends Controller {
         // On récupère les commentaires liés à un article particulier
         $comments = $this->commentManager->getComments($id);
 
-        if (isset($_POST['addComment']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
+        if (isset($_POST['addComment']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
             extract($_POST);
 
             $add = [
@@ -79,7 +79,7 @@ class Blog extends Controller {
 
 
     public function undesirable($id) {
-        if (isset($_POST['undesirable']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
+        if (isset($_POST['undesirable']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
             // Permet de récupèrer l'id de l'article en question
             $comment = $this->commentManager->getComment($id);
             $postId = $comment->post_id();
