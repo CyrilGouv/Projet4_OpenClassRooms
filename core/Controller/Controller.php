@@ -13,7 +13,7 @@ class Controller {
     }
 
 
-    // Permet de load les models
+    // Permet d'instantier les models
     public function manager($model) {
         $namespaceModel = 'App\Model\\' . $model;
         return new $namespaceModel(); 
